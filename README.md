@@ -6,7 +6,7 @@
 | 🔌 API Endpoint  | [https://vitalguard-api.onrender.com](https://vitalguard-api.onrender.com) |
 | 🖥️ Frontend UI   | [https://vitalguard-ai-insights-28.vercel.app](https://vitalguard-ai-insights-28.vercel.app) |
 | 🧾 GitHub Repo   | [https://github.com/richartdo/vitalguard-ai-insights-28](https://github.com/richartdo/vitalguard-ai-insights-28) |
-| 📊 Pitch Deck    | [📎 Click here to view the Canva Pitch Deck](#) *(Replace this with your Canva link)* |
+| 📊 Pitch Deck    | [📎 Click here to view the Canva Pitch Deck](https://www.canva.com/design/DAGsxyOi9hE/N5nt0GNcXBk13sumfpHgHg/edit?utm_content=DAGsxyOi9hE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) |
 
 ---
 
