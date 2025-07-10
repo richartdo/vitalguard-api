@@ -35,7 +35,7 @@ Access to real-time, affordable health monitoring is limited for many individual
 
 ## 📈 Project Structure
 
-```bash
+
 vitalguard-api/
 ├── app.py                      # Flask REST API
 ├── requirements.txt            # Python dependencies
@@ -89,8 +89,8 @@ vitalguard-api/
 
 **POST** `https://vitalguard-api.onrender.com/predict`
 
-### ✅ Request:
-```json
+### ✅ Reques:
+
 {
   "heart_rate": 90,
   "blood_oxygen": 95
