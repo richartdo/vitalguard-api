@@ -33,14 +33,15 @@ Access to real-time, affordable health monitoring is limited for many individual
 
 ---
 
-## 🧱 Project Structure
+## 📈 Project Structure
 
+```bash
 vitalguard-api/
-├── app.py # Flask REST API
-├── requirements.txt # Python dependencies
-├── render.yaml # Render deployment config
+├── app.py                      # Flask REST API
+├── requirements.txt            # Python dependencies
+├── render.yaml                 # Render deployment config
 ├── models/
-│ └── health_anomaly_model.pkl # Trained anomaly detection model
+│   └── health_anomaly_model.pkl  # Trained anomaly detection model
 ├── .gitignore
 └── README.md
 
@@ -94,3 +95,38 @@ vitalguard-api/
   "heart_rate": 90,
   "blood_oxygen": 95
 }
+### ✅ Sample Response:
+
+{
+  "status": "Normal",
+  "recommendation": "Stay active and hydrated."
+}
+
+## ✅ Steps Taken
+
+- ✅ Defined the problem and health metrics (heart rate, SpO2)
+- ✅ Simulated health data and visualized it in notebooks
+- ✅ Built and trained an AI model for anomaly detection
+- ✅ Serialized and saved the trained model
+- ✅ Created a Flask API to serve predictions
+- ✅ Deployed the API on Render
+- ✅ Built a frontend UI using Lovable and deployed via Vercel
+- ✅ Integrated the UI with the API for real-time predictions
+- ✅ Designed a project pitch deck using Canva
+
+---
+
+## 📈 Future Improvements
+
+- Integrate with real wearable device APIs (e.g., Fitbit, Apple Health)
+- Add additional health metrics (e.g., sleep, steps, temperature)
+- Implement user accounts and data history
+- Improve UI styling and responsiveness
+- Add multi-language support and chatbot health assistant
+
+---
+
+## 💬 License & Credits
+
+Built by **Brian Richard** as part of the **AI for Software Engineering** course.  
+Free to reuse and modify with attribution.
