@@ -1,37 +1,23 @@
-from flask import Flask, request, jsonify
+import streamlit as st
 import joblib
-import pandas as pd
+import numpy as np
 
-app = Flask(__name__)
+# Load model and other assets
+model = joblib.load("disease_model.pkl")
+le = joblib.load("label_encoder.pkl")
+symptom_list = joblib.load("symptom_list.pkl")
 
-# Load the trained AI model
-model = joblib.load("models/health_anomaly_model.pkl")
+# Streamlit App UI
+st.title("🩺 AI-Powered Personal Health Assistant")
+st.write("Select your symptoms to get an AI-generated diagnosis insight.")
 
-@app.route('/')
-def home():
-    return "✅ VitalGuard AI API is live."
+selected_symptoms = st.multiselect("Choose symptoms", symptom_list)
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    data = request.get_json()
+if st.button("Get Diagnosis Insight"):
+    input_data = [1 if symptom in selected_symptoms else 0 for symptom in symptom_list]
+    input_array = np.array([input_data])
+    prediction = model.predict(input_array)[0]
+    diagnosis = le.inverse_transform([prediction])[0]
 
-    df = pd.DataFrame([{
-        'heart_rate': data['heart_rate'],
-        'blood_oxygen': data['blood_oxygen']
-    }])
-
-    prediction = model.predict(df)[0]
-    result = 'Anomaly' if prediction == -1 else 'Normal'
-    recommendation = (
-        "Consult a doctor immediately." if result == 'Anomaly'
-        else "Stay active and hydrated."
-    )
-
-    return jsonify({
-        'status': result,
-        'recommendation': recommendation
-    })
-
-if __name__ == '__main__':
-    app.run(debug=True)
- 
+    st.success(f"🧠 Predicted Condition: **{diagnosis}**")
+    st.info("Note: This is an AI suggestion. Always consult a healthcare professional.")
