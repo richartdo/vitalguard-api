@@ -1,6 +1,17 @@
 # 🩺 AI-Powered Personal Health Assistant
 
-🔗 **Live App:** [https://ai-health-assistant-v2rr.onrender.com](https://ai-health-assistant-v2rr.onrender.com)
+### 🔗 Live App  
+👉 [https://ai-health-assistant-v2rr.onrender.com](https://ai-health-assistant-v2rr.onrender.com)
+
+### 📂 GitHub Repository  
+👉 [Repo with initial files hosted by Render.](https://github.com/richartdo/ai-health-assistant.git)
+
+### 📽️ Pitch Deck (Canva)  
+👉 [MY PITCH DECK](https://www.canva.com/design/DAGsxyOi9hE/N5nt0GNcXBk13sumfpHgHg/edit?utm_content=DAGsxyOi9hE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+### 🎥 Live Demo Video  
+👉 [Google Drive Video](https://drive.google.com/file/d/1ZAUzU_XIHi5Xe5aRFSBgyRRHV69FmzNR/view?usp=sharing)  
+
 
 ---
 
